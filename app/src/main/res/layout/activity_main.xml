@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <!--Heading Text View-->
+    <TextView
+        android:id="@+id/txthead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/audio_recorder"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:textSize="30sp" />
+
+    <!--This will display the status of our app when
+        we will record some audio and play that audio-->
+    <TextView
+        android:id="@+id/idTVstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Ejemplo de Aplicacion"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <!--Linear Layout for adding textviews
+        in horizontal manner-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:orientation="vertical"
+        android:weightSum="4"
+        android:gravity="center">
+
+        <!--Textview to start audio recording
+            drawableTop will add above mic image-->
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Grabacion"
+            android:layout_marginTop="5dp"
+            android:textSize="10dp"/>
+
+        <Button
+            android:id="@+id/buttonStop"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Detener Grabacion"
+            android:layout_marginTop="20dp"
+            android:textSize="10dp"/>
+
+        <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Reproducir Audio"
+        android:layout_marginTop="20dp"
+        android:textSize="10dp"/>
+    </LinearLayout>
+</RelativeLayout>
